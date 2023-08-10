@@ -21,6 +21,7 @@ model User {
   name      String?
   city      String?
   photo     String?
+  otp       String?
   rewards   Reward[]
 }
 

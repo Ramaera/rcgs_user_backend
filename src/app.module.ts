@@ -11,6 +11,8 @@ import { RewardsModule } from './rewards/rewards.module';
 import config from './common/configs/config';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GqlConfigService } from './gql-config.service';
+import { OtpModule } from './otp/otp.module';
+
 
 
 @Module({
@@ -37,6 +39,8 @@ import { GqlConfigService } from './gql-config.service';
     AuthModule,
     UsersModule,
     RewardsModule,
+    OtpModule,
+   
     
   ],
   controllers: [AppController],
